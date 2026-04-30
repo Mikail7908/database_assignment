@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # ── Connection ────────────────────────────────────────────────────────────────
-DB_URL = "postgresql+psycopg2://postgres:Phalombe7908@db.nztjsnvkhvrzypbbjwrq.supabase.co:5432/postgres"
+DB_URL = "postgresql+psycopg2://postgres.nztjsnvkhvrzypbbjwrq:Phalombe7908@aws-0-eu-west-1.pooler.supabase.com:5432/postgres"
 
 @st.cache_resource
 def get_engine():
