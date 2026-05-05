@@ -261,8 +261,8 @@ fig4.add_trace(go.Bar(
 fig4.update_layout(
     title="Monthly Order Volume and Revenue Trend (Jan-Apr 2026)",
     xaxis_title="Month",
-    yaxis=dict(title="Revenue (GBP)", titlefont=dict(color="#4C72B0")),
-    yaxis2=dict(title="Number of Orders", titlefont=dict(color="#DD8452"),
+    yaxis=dict(title=dict(text="Revenue (GBP)", font=dict(color="#4C72B0"))),
+    yaxis2=dict(title=dict(text="Number of Orders", font=dict(color="#DD8452")),
                 overlaying="y", side="right"),
     legend=dict(x=0.01, y=0.99)
 )
