@@ -20,7 +20,7 @@ def query(sql):
         return pd.read_sql(text(sql), conn)
 
 # ── Page header ───────────────────────────────────────────────────────────────
-st.title("Food Delivery Platform — Analytics Dashboard")
+st.title("Mikail's Food Delivery Platform — Analytics Dashboard")
 st.markdown(
     "Live business intelligence dashboard connected to a PostgreSQL database "
     "(Supabase). Data covers orders placed January – April 2026 across "
