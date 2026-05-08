@@ -20,10 +20,10 @@ def query(sql):
         return pd.read_sql(text(sql), conn)
 
 # ── Page header ───────────────────────────────────────────────────────────────
-st.title("Mikail's Food Delivery Platform — Analytics Dashboard")
+st.title("Mikail's Food Delivery Platform - Analytics Dashboard")
 st.markdown(
     "Live business intelligence dashboard connected to a PostgreSQL database "
-    "(Supabase). Data covers orders placed January – April 2026 across "
+    "(Supabase). Data covers orders placed January - April 2026 across "
     "5 restaurants, 5 customers, and 5 delivery drivers."
 )
 st.divider()
@@ -32,7 +32,7 @@ st.divider()
 st.header("1. Restaurant Revenue Ranking")
 st.markdown(
     "Joins `restaurant`, `orders`, and `order_item` to rank partner restaurants "
-    "by total delivered revenue — supports promotional placement decisions."
+    "by total delivered revenue - supports promotional placement decisions."
 )
 
 with st.expander("Show SQL"):
@@ -87,7 +87,7 @@ st.divider()
 st.header("2. Top 10 Most Ordered Menu Items")
 st.markdown(
     "Joins `menu_item`, `order_item`, `orders`, and `restaurant` to identify "
-    "best-selling dishes — supports stock planning and promotions."
+    "best-selling dishes - supports stock planning and promotions."
 )
 
 with st.expander("Show SQL"):
@@ -143,7 +143,7 @@ st.divider()
 st.header("3. Driver Performance")
 st.markdown(
     "Joins `driver`, `orders`, and `review` to compare average delivery time "
-    "and customer rating per driver — informs performance management."
+    "and customer rating per driver - informs performance management."
 )
 
 with st.expander("Show SQL"):
@@ -211,7 +211,7 @@ st.divider()
 # ── Query 4: Monthly Trend ────────────────────────────────────────────────────
 st.header("4. Monthly Order Volume and Revenue Trend")
 st.markdown(
-    "Aggregates `orders` by month — reveals platform growth trends "
+    "Aggregates `orders` by month - reveals platform growth trends "
     "to support business planning and forecasting."
 )
 
