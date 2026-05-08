@@ -23,7 +23,7 @@ def query(sql):
 st.title("Mikail's Food Delivery Platform - Analytics Dashboard")
 st.markdown(
     "Live business intelligence dashboard connected to a PostgreSQL database "
-    "(Supabase). Data covers orders placed January - April 2026 across "
+    "Data covers orders placed January - April 2026 across "
     "5 restaurants, 5 customers, and 5 delivery drivers."
 )
 st.divider()
